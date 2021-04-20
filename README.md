@@ -33,8 +33,6 @@
 
 ### IP Addresses (v4 and v6)
 
----
-
 - **IPv4 => 32 bits (2<sup>32</sup>)**
   ![IPv4](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ipv4_address.svg/580px-Ipv4_address.svg.png)
 - **IPv6 => 128 bits (2<sup>128</sup>)**
@@ -51,8 +49,6 @@
   - `192.0.2.33 => ::ffff:192.0.2.33`
 
 #### Subnets
-
----
 
 ##### Classes in IPv4
 
@@ -74,8 +70,6 @@
 
 #### Port Numbers
 
----
-
 - 2 byte number that is like the local address for the connection
   - _(Think of the IP address as the street address of a hotel, and the port number as the room number.)_
 - Details about different ports available on,
@@ -85,8 +79,6 @@
   </br>
 
 ### Byte Order
-
----
 
 - Two byte orderings
   - Network Byte Order (Big-Endian) -> big end first  
@@ -109,8 +101,6 @@
 </br>
 
 ### structs
-
----
 
 |        Name        |   Type   |                                                     Usage                                                      |
 | :----------------: | :------: | :------------------------------------------------------------------------------------------------------------: |
