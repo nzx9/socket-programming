@@ -1,4 +1,17 @@
-# socket-programming
+# [socket-programming](https://github.com/krypto-i9/socket-programming)
+
+## Implementations (C lang)
+
+- [IP Lookup](https://github.com/krypto-i9/socket-programming/blob/main/iplookup/iplookup.c)
+
+- [Stream Sockets](https://github.com/krypto-i9/socket-programming/tree/main/stream-sockets)
+
+  - [Server](https://github.com/krypto-i9/socket-programming/blob/main/stream-sockets/st_server.c)
+  - [Receiver](https://github.com/krypto-i9/socket-programming/blob/main/stream-sockets/st_receiver.c)
+
+- [Datagram Sockets](https://github.com/krypto-i9/socket-programming/tree/main/datagram-sockets)
+  - [Server](https://github.com/krypto-i9/socket-programming/blob/main/datagram-sockets/dg_server.c)
+  - [Receiver](https://github.com/krypto-i9/socket-programming/blob/main/datagram-sockets/dg_receiver.c)
 
 ## What is a Socket?
 
