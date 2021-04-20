@@ -246,3 +246,89 @@ struct sockaddr_storage {
   argument size.
 
 > **All these `inet_pton()` and `inet_ntop()` will not do any DNS lookup on hostname. For that use `getaddrinfo()`.**
+
+## System Calls or Busts
+
+### `getaddrinfo()`
+
+```c
+    int getaddrinfo(const char* node, const char* service, const struct addrinfo* hints, struct addrinfo** res);
+```
+
+- **onerror** :: `return non-zero integer` (if return 0, then it's successfull)
+
+### `socket()`
+
+```c
+    int socket(int domain, int type, int protocol);
+```
+
+- **onerror** :: `return -1`
+
+### `bind()`
+
+```c
+    int bind(int sockfd, struct sockaddr* my_addr, int addrlen);
+```
+
+- **onerror** :: `return -1`
+
+### `connect()`
+
+```c
+    int connect(int sockfd, struct sockaddr *serv_addr, int addrlen);
+```
+
+- **onerror** :: `return -1`
+
+### `listen()`
+
+```c
+    int listen(int sockfd, int backlog);
+```
+
+- **onerror** :: `return -1`
+
+### `accept()`
+
+```c
+    int accept(int sockfd, struct sockaddr* addr, socklen_t* addrlen);
+```
+
+- **onerror** :: `return -1`
+
+### `send()` and `recv()`
+
+```c
+    int send(int sockfd, const void* msg, int len, int flags);
+
+    int recv(int sockfd, void* buf, int len, int flags);
+```
+
+### `sendto()` and `recvfrom()`
+
+```c
+    int sendto(int sockfd, const void* msg, int len, unsigned int flags, const struct sockaddr *to, socklen_t tolen);
+
+    int recvfrom(int sockfd, void *buf, int len, unigned int flags, struct sockaddr* from, int* fromlen);
+```
+
+### `close()` and `shutdown()`
+
+```c
+    void close(int sockfd);
+
+    int shutdown(int sockfd, int how);
+```
+
+### `getpeername()`
+
+```c
+    int getpeername(int sockfd, struct sockaddr* addr, int* addrlen);
+```
+
+### `gethostname()`
+
+```c
+    int gethostname(const* hostname, size_t size);
+```
