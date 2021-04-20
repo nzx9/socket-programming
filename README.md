@@ -1,4 +1,4 @@
-# socket-programmin
+# socket-programming
 
 ## What is a Socket?
 
